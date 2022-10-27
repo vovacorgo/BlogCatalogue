@@ -16,7 +16,7 @@ $this->params['breadcrumbs'][] = $this->title;
 
     <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
 
-
+     
 
         <p>
             Note that if you turn on the Yii debugger, you should be able
