@@ -83,7 +83,3 @@ a.desc:after {
     outline: none;
 }
 
-
-.nav > li > form > button.logout:read-only {
-    outline: none;
-}
