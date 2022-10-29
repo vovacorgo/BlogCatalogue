@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DdlMappings">
+    <mapping uuid="5af44dcd-212a-42db-8a20-1f2690c5d87a" name="Blog Mapping">
+      <data-sources db="45b900c5-2593-4275-b979-36821257ab6b" ddl="c924bb98-923e-47bc-8df8-eb9391e210d9" />
+      <scope>
+        <node kind="database" qname="@">
+          <node kind="schema" qname="@" />
+        </node>
+      </scope>
+    </mapping>
+  </component>
+  <component name="SqlDataSourceStorage">
+    <option name="dataSources">
+      <list>
+        <State>
+          <option name="id" value="c924bb98-923e-47bc-8df8-eb9391e210d9" />
+          <option name="name" value="Blog (DDL)" />
+          <option name="languageId" value="MySQL" />
+          <option name="urls">
+            <array />
+          </option>
+        </State>
+      </list>
+    </option>
+  </component>
+</project>
