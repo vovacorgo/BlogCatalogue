@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Yii2 Support">
+    <option name="yiiRootPath" value="C:\Users\Lenovo\Desktop\OOP\4_kurc\Prog_in_internet\lb_1-3" />
     <option name="migrateCommands">
       <list>
         <MigrateCommand>
