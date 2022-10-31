@@ -37,8 +37,8 @@ class Article extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['title','required']],
-            [['title', 'description', 'content'], 'string'],
+            [['title'], 'required'],
+            [['title','description', 'content'], 'string'],
             [['date'], 'date', 'format' => 'php:Y-m-d'],
             [['date'], 'default', 'value' => date('Y-m-d')],
             [['title'], 'string', 'max' => 255],
@@ -64,23 +64,19 @@ class Article extends \yii\db\ActiveRecord
         ];
     }
 
-    /**
-     * Gets query for [[ArticleTags]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
     public function getArticleTags()
     {
         return $this->hasMany(ArticleTag::class, ['article_id' => 'id']);
     }
 
-    /**
-     * Gets query for [[Comments]].
-     *
-     * @return \yii\db\ActiveQuery
-     */
     public function getComments()
     {
         return $this->hasMany(Comment::class, ['article_id' => 'id']);
+    }
+
+    public function  saveImage($filename)
+    {
+        $this->image = $filename;
+        return $this->save(false);
     }
 }
