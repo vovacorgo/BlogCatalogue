@@ -138,6 +138,7 @@ class ArticleController extends Controller
     public function actionSetImage($id)
     {
         $model = new ImageUpload;
+
         if (Yii::$app->request->isPost)
         {
             $article = $this->findModel($id);
@@ -150,5 +151,7 @@ class ArticleController extends Controller
         }
 
         return $this->render('image', ['model'=>$model]);
+
     }
+
 }
