@@ -70,6 +70,7 @@ $this->registerLinkTag(['rel' => 'icon', 'type' => 'image/x-icon', 'href' => '@w
         <?php endif ?>
         <?= Alert::widget() ?>
         <?= $content ?>
+
     </div>
 </main>
 
